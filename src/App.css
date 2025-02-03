@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --color-orange-logo: #fc582a;
+    --color-background: #101828;
+}
+
+.logo {
+    font-family: 'Outlast Slab', serif;
+}
+

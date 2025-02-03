@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200.02118mm"
+   height="199.43295mm"
+   viewBox="0 0 161.49357 161.01871"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient14">
+      <stop
+         style="stop-color:#101828;stop-opacity:1;"
+         offset="0"
+         id="stop14" />
+      <stop
+         style="stop-color:#101828;stop-opacity:0;"
+         offset="1"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       id="swatch12">
+      <stop
+         style="stop-color:#101828;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(0.3466494,0,0,0.3466494,24.902855,-12.289194)">
+    <path
+       id="path11"
+       style="fill:none;stroke:#fc5829;stroke-width:4.60081;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 166.00522,196.32198 -9.81782,30.41138 m 34.37783,-15.23189 -15.32894,14.27912 m 15.26042,-14.54437 -15.02237,-14.57049 m -43.84697,14.88906 15.32897,14.27919 m -15.26043,-14.54442 15.02237,-14.57052 m -32.17351,-11.98546 82.77646,-0.31363 m -51.91454,-10.31026 31.37925,-0.44329 m -62.5923,-10.46742 h 93.80534 v 75.1797 h -93.80534 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:52.4175px;line-height:0;font-family:Outlast;-inkscape-font-specification:'Outlast, Expanded';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.0742927;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1"
+       x="12.702637"
+       y="319.0925"
+       id="text2"><tspan
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:52.4175px;font-family:Outlast;-inkscape-font-specification:'Outlast, Expanded';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0742927;stroke-opacity:1"
+         x="12.702637"
+         y="319.0925">MANU LEYVA</tspan><tspan
+         id="tspan3"
+         x="12.702637"
+         y="319.0925"
+         style="stroke-width:0.0742927" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:24.8983px;line-height:0;font-family:Outlast;-inkscape-font-specification:'Outlast, Expanded';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fc5829;fill-opacity:1;stroke:#fc5829;stroke-width:0.0742927;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1"
+       x="41.236076"
+       y="345.43582"
+       id="text2-8"><tspan
+         id="tspan4"
+         x="41.236076"
+         y="345.43582"
+         style="stroke-width:0.0742927">DESARROLLADOR WEB</tspan><tspan
+         id="tspan5"
+         x="41.236076"
+         y="345.43582"
+         style="stroke-width:0.0742927" /></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:12.585;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path5"
+       cx="161.09631"
+       cy="267.70126"
+       r="200.74908" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.6304;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path5-1"
+       cx="161.09631"
+       cy="266.75226"
+       r="176.00407" />
+  </g>
+</svg>

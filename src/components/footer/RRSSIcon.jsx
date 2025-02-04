@@ -6,7 +6,7 @@ const RRSSIcon = ({href, children}) => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-orange-logo transition-colors duration-300"
+            className="hover:text-orange-app transition-colors duration-300"
         >
             {children}
         </a>

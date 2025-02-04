@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import MenuLink from './MenuLink';
 import MobileMenuButton from './MobileMenuButton';
+import Logo from "./Logo.jsx";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('home');
+    const [activeSection, setActiveSection] = useState('cv');
 
     useEffect(() => {
         const sections = document.querySelectorAll('section[id]');
@@ -23,11 +24,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="custom-gradient p-4 fixed w-full z-20">
+        <nav className="bg-gradient p-4 fixed w-full z-20">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
-                <div className="text-white font-bold text-xl">MiPortfolio</div>
+                <Logo />
                 <div className="hidden md:flex space-x-8">
-                    <MenuLink href="#home" active={activeSection === 'home'}>Inicio</MenuLink>
+                    <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
                     <MenuLink href="#about" active={activeSection === 'about'}>Acerca</MenuLink>
                     <MenuLink href="#services" active={activeSection === 'services'}>Servicios</MenuLink>
                     <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
@@ -49,11 +50,11 @@ const Navbar = () => {
                     <ul className="flex flex-col space-y-4">
                         <li>
                             <MenuLink
-                                href="#home"
-                                active={activeSection === 'home'}
+                                href="#cv"
+                                active={activeSection === 'cv'}
                                 onClick={() => setMenuOpen(false)}
                             >
-                                Inicio
+                                CV
                             </MenuLink>
                         </li>
                         <li>

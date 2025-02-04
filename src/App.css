@@ -7,12 +7,10 @@
 }
 
 @theme {
-    --color-orange-logo: #fc582a;
+    --color-orange-app: #fc582a;
+    --color-orange-app-hover: #e14e22;
 }
 
-
-
-.logo {
-    font-family: 'Outlast Slab', serif;
+.outlast {
+    font-family: 'Outlast', serif;
 }
-

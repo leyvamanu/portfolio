@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 @font-face {
     font-family: 'Outlast Serif';
     src: url('public/font/OutlastSerif.eot');
@@ -39,4 +41,5 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: "Share Tech Mono", serif;
 }

@@ -1,5 +1,3 @@
-import 'react';
-
 // eslint-disable-next-line react/prop-types
 const MenuLink = ({ href, active, onClick, children }) => {
     return (

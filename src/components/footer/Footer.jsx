@@ -1,4 +1,3 @@
-import 'react';
 import RRSSIcon from "./RRSSIcon.jsx";
 import GitHubIconSVG from "./GitHubIconSVG.jsx";
 import LinkedinIconSVG from "./LinkedinIconSVG.jsx";

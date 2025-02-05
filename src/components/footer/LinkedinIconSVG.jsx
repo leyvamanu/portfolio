@@ -1,6 +1,4 @@
-import React from 'react';
-
-function GitHubIconSVG() {
+const GitHubIconSVG = () => {
     return (
         <svg
             className="w-6 h-6 fill-current"

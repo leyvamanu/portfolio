@@ -1,7 +1,6 @@
-import 'react';
-import cv from '../../assets/CV Manuel Leyva.pdf';
-import heroImage from '../../assets/hero.png';
-import logo from '../../assets/logo-icon-bg-transparent.svg';
+import heroImage from '../../../assets/hero.png';
+import logo from '../../../assets/logo-icon-bg-transparent.svg';
+import DownloadButton from "./DownloadButton.jsx";
 
 const CVSection = () => {
     return (
@@ -24,25 +23,13 @@ const CVSection = () => {
                                 Desarrollador Web
                             </h2>
                             <div className="mt2 flex items-center justify-center">
-                                <a
-                                    href={cv}
-                                    download
-                                    className="mt-3 md:text-lg flex bg-orange-app text-white p-3 md:px-5 rounded hover:bg-orange-app-hover transition-colors duration-300"
-                                >
-                                    <span className="mr-3">Descargar</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                         stroke="currentColor" className="size-6">
-                                        <path
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>
-                                    </svg>
-                                </a>
+                                <DownloadButton />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     );
 };
 

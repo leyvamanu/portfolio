@@ -1,10 +1,10 @@
 import './App.css'
 import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
-import CVSection from "./components/sections/CVSection.jsx";
+import CVSection from "./components/sections/cv/CVSection.jsx";
 import BackToTopButton from "./components/BackToTopButton.jsx";
 
-export default function App() {
+const App = () => {
     return (
         <div className="flex-col min-h-screen items-center justify-center bg-gradient text-white">
             <NavBar />
@@ -26,3 +26,5 @@ export default function App() {
         </div>
     );
 }
+
+export default App;

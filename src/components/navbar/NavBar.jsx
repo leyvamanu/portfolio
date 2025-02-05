@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import MenuLink from './MenuLink';
 import MobileMenuButton from './MobileMenuButton';
 import Logo from "./Logo.jsx";
@@ -40,7 +40,7 @@ const Navbar = () => {
                     />
                 </div>
             </div>
-            {/* Menú móvil deslizable desde la izquierda */}
+
             <div
                 className={`fixed top-0 left-0 h-full w-64 bg-black/80 backdrop-blur-sm transform transition-transform duration-300 z-30 ${
                     menuOpen ? 'translate-x-0' : '-translate-x-full'

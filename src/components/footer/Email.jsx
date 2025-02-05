@@ -1,6 +1,4 @@
-import 'react';
-
-function Email() {
+const Email = () => {
     return (
         <div className="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg"

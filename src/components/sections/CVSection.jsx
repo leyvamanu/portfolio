@@ -7,7 +7,7 @@ const CVSection = () => {
     return (
         <section
             id="cv"
-            className="relative w-full h-screen min-h-[30rem] bg-fixed bg-cover bg-center"
+            className="relative w-full h-screen min-h-[40rem] bg-fixed bg-cover bg-center"
             style={{backgroundImage: `url(${heroImage})`}}
         >
             <div className="absolute inset-0 flex items-center justify-center">

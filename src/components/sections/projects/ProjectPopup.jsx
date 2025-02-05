@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CloseButton from "./CloseButton";
 
 const ProjectPopup = ({ project, onClose }) => {
+    const [isVisible, setIsVisible] = useState(false);
+
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        setTimeout(() => setIsVisible(true), 10); // 🔹 Retrasa el cambio de estado para permitir la animación
+
         return () => {
             document.body.style.overflow = "auto";
         };
@@ -11,7 +15,11 @@ const ProjectPopup = ({ project, onClose }) => {
 
     return (
         <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-60 transition-opacity duration-300">
-            <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative transform transition-all duration-500 opacity-100 translate-y-0 scale-100">
+            <div
+                className={`bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative transform transition-all duration-500 ${
+                    isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"
+                }`}
+            >
                 <CloseButton onClick={onClose} />
                 <img src={project.image} alt={project.title} className="w-full h-60 object-cover rounded" />
                 <h3 className="text-2xl font-bold mt-4">{project.title}</h3>

@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Logo />
                 <div className="hidden md:flex space-x-8">
                     <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
-                    <MenuLink href="#about" active={activeSection === 'about'}>Acerca</MenuLink>
+                    <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
                     <MenuLink href="#services" active={activeSection === 'services'}>Servicios</MenuLink>
                     <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
                 </div>
@@ -59,11 +59,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <MenuLink
-                                href="#about"
-                                active={activeSection === 'about'}
+                                href="#projects"
+                                active={activeSection === 'projects'}
                                 onClick={() => setMenuOpen(false)}
                             >
-                                Acerca
+                                Proyectos
                             </MenuLink>
                         </li>
                         <li>

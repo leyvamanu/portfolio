@@ -5,7 +5,7 @@ const DownloadButton  = () => {
         <a
             href={cv}
             download
-            className="mt-3 md:text-lg relative inline-block bg-orange-app  text-white px-6 py-3 rounded overflow-hidden transition-colors duration-300 group"
+            className="mt-3 md:text-lg relative inline-block bg-orange-app  text-white px-3 md:px-6 py-3 rounded overflow-hidden transition-colors duration-300 group"
         >
             <div className="flex items-center justify-center w-full">
                 <span className="mr-3">Descargar</span>

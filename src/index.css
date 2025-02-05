@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Outlast Serif';
-    src: url('public/font/OutlastSerif.eot');
+    src: url('assets/font/OutlastSerif.eot');
     src: local('Outlast Serif'), local('OutlastSerif'),
-    url('public/font/OutlastSerif.eot?#iefix') format('embedded-opentype'),
-    url('public/font/OutlastSerif.woff2') format('woff2'),
-    url('public/font/OutlastSerif.woff') format('woff'),
-    url('public/font/OutlastSerif.ttf') format('truetype');
+    url('assets/font/OutlastSerif.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/OutlastSerif.woff2') format('woff2'),
+    url('assets/font/OutlastSerif.woff') format('woff'),
+    url('assets/font/OutlastSerif.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: 'Outlast Slab';
-    src: url('public/font/OutlastSlab.eot');
+    src: url('assets/font/OutlastSlab.eot');
     src: local('Outlast Slab'), local('OutlastSlab'),
-    url('public/font/OutlastSlab.eot?#iefix') format('embedded-opentype'),
-    url('public/font/OutlastSlab.woff2') format('woff2'),
-    url('public/font/OutlastSlab.woff') format('woff'),
-    url('public/font/OutlastSlab.ttf') format('truetype');
+    url('assets/font/OutlastSlab.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/OutlastSlab.woff2') format('woff2'),
+    url('assets/font/OutlastSlab.woff') format('woff'),
+    url('assets/font/OutlastSlab.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -28,12 +28,12 @@
 
 @font-face {
     font-family: 'Outlast';
-    src: url('public/font/OutlastRegular.eot');
+    src: url('assets/font/OutlastRegular.eot');
     src: local('Outlast'), local('OutlastRegular'),
-    url('public/font/OutlastRegular.eot?#iefix') format('embedded-opentype'),
-    url('public/font/OutlastRegular.woff2') format('woff2'),
-    url('public/font/OutlastRegular.woff') format('woff'),
-    url('public/font/OutlastRegular.ttf') format('truetype');
+    url('assets/font/OutlastRegular.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/OutlastRegular.woff2') format('woff2'),
+    url('assets/font/OutlastRegular.woff') format('woff'),
+    url('assets/font/OutlastRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -42,4 +42,8 @@
 html {
     scroll-behavior: smooth;
     font-family: "Share Tech Mono", serif;
+}
+
+.outlast {
+    font-family: 'Outlast Slab', serif;
 }

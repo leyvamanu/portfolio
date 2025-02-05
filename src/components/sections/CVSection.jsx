@@ -7,27 +7,29 @@ const CVSection = () => {
     return (
         <section
             id="cv"
-            className="relative w-full h-screen bg-fixed bg-cover bg-center"
+            className="relative w-full h-screen min-h-[30rem] bg-fixed bg-cover bg-center"
             style={{backgroundImage: `url(${heroImage})`}}
         >
             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-gradient rounded-full mx-4 text-center flex justify-center items-center border-14 h-80 w-80 md:h96 md:w-96">
+                <div className="bg-gradient rounded-full mx-4 text-center flex justify-center items-center border-14 h-80 w-80 md:h-96 md:w-96">
                     <div className="rounded-full mx-4 flex justify-center items-center border-4 h-64 w-64 md:h-80 md:w-80">
                         <div className="flex-col justify-items-center">
-                            <img src={logo} className="h-14 mb-2" alt="Manuel Leyva Desarrollador Web - Logo"/>
-                            <h1 className="text-3xl text-white font-bold uppercase outlast">
+                            <div className="flex items-center justify-center">
+                                <img src={logo} className="h-14 md:h-20 mb-2" alt="Manuel Leyva Desarrollador Web - Logo"/>
+                            </div>
+                            <h1 className="text-3xl md:text-4xl text-white uppercase outlast">
                                 Manu Leyva
                             </h1>
-                            <h2 className="text-xl text-orange-app outlast">
+                            <h2 className="text-xl md:text-2xl text-orange-app outlast">
                                 Desarrollador Web
                             </h2>
-                            <div className="mt2 text-center">
+                            <div className="mt2 flex items-center justify-center">
                                 <a
                                     href={cv}
                                     download
-                                    className="mt-3 flex bg-orange-app text-white p-3 rounded hover:bg-orange-app-hover transition-colors duration-300"
+                                    className="mt-3 md:text-lg flex bg-orange-app text-white p-3 md:px-5 rounded hover:bg-orange-app-hover transition-colors duration-300"
                                 >
-                                    Descargar
+                                    <span className="mr-3">Descargar</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                          stroke="currentColor" className="size-6">
                                         <path
@@ -38,7 +40,6 @@ const CVSection = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 

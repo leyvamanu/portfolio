@@ -1,4 +1,4 @@
-import logo from '../../assets/logo-simple-bg-transparent.svg'
+import logo from '../../assets/logo-simple-bg-transparent.png'
 
 function Logo() {
     return (

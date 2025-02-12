@@ -1,14 +1,14 @@
 const projects = [
     {
         id: 1,
-        title: "Proyecto 1",
-        image: "/proyecto1.jpg",
-        shortDesc: "Breve descripción del proyecto 1.",
-        fullDesc: "Descripción completa del proyecto 1.",
-        technologies: ["React", "Tailwind", "Firebase"],
+        title: "Compelex",
+        image: "/projects/compelex.png",
+        shortDesc: "Lorem Ipsum",
+        fullDesc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+        technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind", "Stripe"],
         type: "Profesional",
-        github: "https://github.com/usuario/proyecto1",
-        url: "https://proyecto1.com",
+        github: "",
+        url: "https://compelex.com",
     },
     {
         id: 2,

@@ -4,7 +4,7 @@ const CloseButton = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="absolute top-2 right-2 text-orange-app hover:cursor-pointer transition-colors duration-300"
+            className="absolute top-2 right-2 text-orange-app hover:cursor-pointer transition-colors duration-300 font-bold text-3xl"
             aria-label="Cerrar"
         >
             ✖

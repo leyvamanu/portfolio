@@ -25,7 +25,7 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     return (
         <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 transition-opacity duration-300">
             <div
-                className={`bg-white p-6 rounded-lg shadow-lg max-w-5xl w-full h-[80vh] overflow-y-auto relative transform transition-all duration-500 ${
+                className={`bg-gradient border-14 p-4 shadow-xl rounded-4xl max-w-7xl w-full overflow-y-scroll h-[80vh] relative transform transition-all duration-500 ${
                     isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"
                 }`}
             >

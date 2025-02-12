@@ -7,7 +7,7 @@ import ProjectsSection from "./components/sections/projects/ProjectsSection.jsx"
 
 const App = () => {
     return (
-        <div className="flex-col min-h-screen items-center justify-center bg-gradient text-white">
+        <div className="flex-col min-h-screen items-center justify-center bg-gradient-menu text-white">
             <NavBar />
             <CVSection />
             <ProjectsSection />

@@ -24,7 +24,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="bg-gradient p-4 fixed w-full z-20">
+        <nav className="bg-gradient-menu p-4 fixed w-full z-20">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 <Logo />
                 <div className="hidden md:flex space-x-8">
@@ -34,10 +34,7 @@ const Navbar = () => {
                     <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
                 </div>
                 <div className="md:hidden">
-                    <MobileMenuButton
-                        menuOpen={menuOpen}
-                        toggleMenu={() => setMenuOpen(!menuOpen)}
-                    />
+                    <MobileMenuButton menuOpen={menuOpen} toggleMenu={() => setMenuOpen(!menuOpen)}/>
                 </div>
             </div>
 
@@ -49,22 +46,10 @@ const Navbar = () => {
                 <div className="p-4">
                     <ul className="flex flex-col space-y-4">
                         <li>
-                            <MenuLink
-                                href="#cv"
-                                active={activeSection === 'cv'}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                CV
-                            </MenuLink>
+                            <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
                         </li>
                         <li>
-                            <MenuLink
-                                href="#projects"
-                                active={activeSection === 'projects'}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                Proyectos
-                            </MenuLink>
+                            <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
                         </li>
                         <li>
                             <MenuLink

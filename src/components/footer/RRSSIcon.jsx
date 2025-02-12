@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/prop-types
 const RRSSIcon = ({href, children}) => {
     return (
         <a

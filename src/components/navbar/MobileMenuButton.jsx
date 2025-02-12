@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/prop-types
 const MobileMenuButton = ({ menuOpen, toggleMenu }) => {
     return (
         <button onClick={toggleMenu} className="relative w-8 h-8 focus:outline-none">

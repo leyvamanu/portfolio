@@ -1,6 +1,5 @@
 import "react";
 
-// eslint-disable-next-line react/prop-types
 const ProjectCard = ({ project, onClick }) => {
     return (
         <div

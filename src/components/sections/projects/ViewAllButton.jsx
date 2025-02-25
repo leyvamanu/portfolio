@@ -4,7 +4,7 @@ const ViewAllButton = ({ onClick, text = "Ver todos" }) => {
     return (
         <button
             onClick={onClick}
-            className="relative inline-block hover:text-orange-app hover:cursor-pointer transition-colors duration-300 group"
+            className="relative inline-block hover:text-orange-app cursor-pointer transition-colors duration-300 group"
         >
             {text}
             <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white transition-all duration-300"></span>

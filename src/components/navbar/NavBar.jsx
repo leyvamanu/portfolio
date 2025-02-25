@@ -8,19 +8,26 @@ const Navbar = () => {
     const [activeSection, setActiveSection] = useState('cv');
 
     useEffect(() => {
-        const sections = document.querySelectorAll('section[id]');
-        const options = { root: null, rootMargin: '0px', threshold: 0.6 };
+        const sections = document.querySelectorAll("section[id]");
+        if (sections.length === 0) return; // Evitar errores si no hay secciones
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
+        const handleScroll = () => {
+            let currentSection = sections[0].id; // Tomamos la primera sección automáticamente
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.3 && rect.bottom >= window.innerHeight * 0.3) {
+                    currentSection = section.id;
                 }
             });
-        }, options);
 
-        sections.forEach((section) => observer.observe(section));
-        return () => observer.disconnect();
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Ejecutar al cargar para marcar la sección correcta
+
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
@@ -52,22 +59,10 @@ const Navbar = () => {
                             <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
                         </li>
                         <li>
-                            <MenuLink
-                                href="#services"
-                                active={activeSection === 'services'}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                Servicios
-                            </MenuLink>
+                            <MenuLink href="#services" active={activeSection === 'services'}>Servicios</MenuLink>
                         </li>
                         <li>
-                            <MenuLink
-                                href="#contact"
-                                active={activeSection === 'contact'}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                Contacto
-                            </MenuLink>
+                            <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
                         </li>
                     </ul>
                 </div>

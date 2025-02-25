@@ -1,3 +1,4 @@
+import React from "react";
 import techIcons from "./data/techIconsData";
 
 const TechBadge = ({tech}) => {

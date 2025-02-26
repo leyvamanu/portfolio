@@ -1,4 +1,4 @@
-const MenuLink = ({ href, active, onClick, children }) => {
+const MenuLink = ({href, active, onClick, children}) => {
     return (
         <a
             href={href}

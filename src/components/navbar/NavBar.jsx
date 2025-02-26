@@ -37,7 +37,7 @@ const Navbar = () => {
                 <div className="hidden md:flex space-x-8">
                     <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
                     <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
-                    <MenuLink href="#services" active={activeSection === 'services'}>Servicios</MenuLink>
+                    <MenuLink href="#about-me" active={activeSection === 'about-me'}>Sobre Mi</MenuLink>
                     <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
                 </div>
                 <div className="md:hidden">
@@ -59,7 +59,7 @@ const Navbar = () => {
                             <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
                         </li>
                         <li>
-                            <MenuLink href="#services" active={activeSection === 'services'}>Servicios</MenuLink>
+                            <MenuLink href="#about-me" active={activeSection === 'about-me'}>Sobre Mi</MenuLink>
                         </li>
                         <li>
                             <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>

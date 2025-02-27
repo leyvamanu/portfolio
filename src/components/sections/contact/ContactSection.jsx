@@ -1,8 +1,10 @@
+import React from "react";
+
 const ContactSection = () => {
 
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-center">
-            <h2 className="text-3xl font-bold">Contacto</h2>
+        <section id="contact" className="py-16 px-6 max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-left">Contacto</h2>
         </section>
     );
 };

@@ -3,7 +3,6 @@ import CloseButton from "./CloseButton";
 import ProjectCard from "./ProjectCard";
 import TechBadgeFilter from "./TechBadgeFilter.jsx";
 import techIcons from "./data/techIconsData";
-import cv from "../../../assets/CV Manuel Leyva.pdf";
 
 const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     const [selectedTech, setSelectedTech] = useState([]);

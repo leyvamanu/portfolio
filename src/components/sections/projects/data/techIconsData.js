@@ -1,12 +1,13 @@
 const techIcons = {
-    PHP: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    Symfony: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg",
-    JavaScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    MySQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-    Tailwind: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-    WordPress: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
-    HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    PHP: "tech-logos/php.svg",
+    Symfony: "tech-logos/symfony.svg",
+    JavaScript: "tech-logos/javascript.svg",
+    MySQL: "tech-logos/mysql.svg",
+    Tailwind: "tech-logos/tailwindcss.svg",
+    WordPress: "tech-logos/wordpress.svg",
+    HTML: "tech-logos/html5.svg",
+    CSS: "tech-logos/css3.svg",
+    Stripe: "tech-logos/stripe.svg",
 };
 
 export default techIcons;

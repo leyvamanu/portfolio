@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="mb-4 md:mb-0">
                         <h2 className="text-xl font-bold text-white">MiPortfolio</h2>
                         <p className="text-sm">
-                            © {currentYear} MiNombre. Todos los derechos reservados.
+                            © {currentYear} Manu Leyva - Desarrollador WEB - Todos los derechos reservados.
                         </p>
                     </div>
 

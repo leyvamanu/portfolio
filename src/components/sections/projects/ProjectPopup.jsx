@@ -21,11 +21,11 @@ const ProjectPopup = ({ project, onClose }) => {
                     isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"
                 }`}
             >
+                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <div className="border-4 rounded-xl h-full overflow-y-auto">
                     <CloseButton onClick={onClose} />
                     <img src={project.image} alt={project.title} className="w-full h-60 object-cover rounded" />
                     <div className="p-2">
-                        <h3 className="text-2xl font-bold mt-4">{project.title}</h3>
                         <p className="mt-2">{project.fullDesc}</p>
                         <p className="mt-4 font-semibold">Tipo: <span>{project.type}</span></p>
 

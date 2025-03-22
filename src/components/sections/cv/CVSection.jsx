@@ -1,5 +1,5 @@
-import heroImage from '../../../assets/hero.png';
-import logo from '../../../assets/logo-icon-bg-transparent.svg';
+import heroImage from '../../../assets/images/hero.png';
+import logo from '../../../assets/images/logo-icon-bg-transparent.svg';
 import DownloadButton from "./DownloadButton.jsx";
 
 const CVSection = () => {

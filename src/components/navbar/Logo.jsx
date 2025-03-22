@@ -1,4 +1,4 @@
-import logo from '../../assets/logo-simple-bg-transparent.png'
+import logo from '../../assets/images/logo-simple-bg-transparent.png'
 
 const Logo = () => {
     return (

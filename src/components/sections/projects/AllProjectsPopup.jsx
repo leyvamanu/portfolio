@@ -27,7 +27,7 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     const filteredProjects = projects.filter((project) => {
         const matchesTech =
             selectedTech.length === 0 ||
-            selectedTech.some((tech) => project.technologies.includes(tech));
+            selectedTech.every((tech) => project.technologies.includes(tech));
 
         return matchesTech;
     });

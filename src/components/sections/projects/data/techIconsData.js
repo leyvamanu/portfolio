@@ -8,6 +8,7 @@ const techIcons = {
     HTML: "tech-logos/html5.svg",
     CSS: "tech-logos/css3.svg",
     Stripe: "tech-logos/stripe.svg",
+    UIkit: "tech-logos/uikit.svg",
 };
 
 export default techIcons;

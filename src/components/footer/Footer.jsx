@@ -16,10 +16,7 @@ const Footer = () => {
                             <img src={logo} alt="Manu Leyva - Desarrollador Web - Logo" className="w-60"/>
                         </div>
                         <p className="text-sm text-center">
-                            Manu Leyva - Desarrollador WEB
-                        </p>
-                        <p className="text-sm text-center">
-                            © {currentYear} Todos los derechos reservados
+                            © {currentYear} - Manu Leyva | Desarrollador WEB
                         </p>
                     </div>
 

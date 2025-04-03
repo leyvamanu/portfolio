@@ -3,8 +3,9 @@ const projects = [
         id: 1,
         title: "Compelex",
         image: "/projects/compelex.png",
-        shortDesc: "Lorem Ipsum",
-        fullDesc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+        shortDesc: "Test de competencias digitales",
+        fullDesc: "Esta aplicación consiste en un test dirigido al personal de un despacho de abogados o una asesoría de empresas. Proporciona una serie de gráficos que reflejan el perfil digital de los abogados, segmentado según las características del despacho. Además, genera automáticamente un PDF con los resultados.  \n" +
+            "Cuenta con dos versiones: una gestionada completamente por nosotros y otra de pago online, administrada por el cliente a través de un panel de control.\n",
         technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind", "Stripe"],
         type: "Profesional",
         github: "",
@@ -25,8 +26,10 @@ const projects = [
         id: 3,
         title: "Índice de Madurez Contractual",
         image: "/projects/indice-madurez-contractual.png",
-        shortDesc: "Lorem Ipsum",
-        fullDesc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+        shortDesc: "Diagnóstico operaciones contractuales",
+        fullDesc: "Autodiagnóstico para ayudar a los departamentos legales a identificar áreas de mejora en la gestión de sus contratos.\n" +
+            "La aplicación consta de un test que el usuario responde y, al finalizar, recibe un PDF con los resultados en formato gráfico por correo electrónico.\n" +
+            "Además, la aplicación recopila los datos para generar un benchmark, que el administrador puede visualizar en su panel de control mediante gráficos. Esto permite extraer información valiosa sobre el estado del sector.",
         technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind"],
         type: "Profesional",
         github: "",
@@ -36,8 +39,10 @@ const projects = [
         id: 4,
         title: "Diagnóstico de Legal Operations",
         image: "/projects/diagnostico-legal-operations.png",
-        shortDesc: "Lorem Ipsum",
-        fullDesc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+        shortDesc: "Madurez de las operaciones legales",
+        fullDesc: "Autodiagnóstico para la gestión de operaciones legales en asesorías jurídicas.\n" +
+            "La aplicación incluye un test que el usuario responde y, al terminar, recibe un PDF con los resultados en formato gráfico por correo electrónico.\n" +
+            "Además, la aplicación recopila los datos para crear un benchmark, que se puede consultar en el panel del administrador, donde se presentan en gráficos para obtener información útil sobre el estado del sector.",
         technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind"],
         type: "Profesional",
         github: "",
@@ -47,8 +52,10 @@ const projects = [
         id: 5,
         title: "Diagnóstico de Madurez Digital",
         image: "/projects/diagnostico-madurez-digital.png",
-        shortDesc: "Lorem Ipsum",
-        fullDesc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+        shortDesc: "Madurez digital de los despachos",
+        fullDesc: "Autodiagnóstico para evaluar la madurez digital de los despachos de abogados.\n" +
+            "La aplicación incluye un test que el usuario completa y, al finalizar, recibe un PDF con los resultados representados gráficamente en su correo electrónico.\n" +
+            "Además, la aplicación recopila los datos necesarios para generar un benchmark, el cual se puede consultar a través del panel del administrador. Los resultados se presentan en gráficos, lo que facilita la extracción de información relevante sobre el estado del sector.",
         technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind"],
         type: "Profesional",
         github: "",

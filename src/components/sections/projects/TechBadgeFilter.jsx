@@ -5,7 +5,7 @@ const TechBadge = ({ tech, onClick, isActive }) => {
     return (
         <button
             onClick={onClick}
-            className={`flex items-center gap-2 px-3 py-1 rounded-full border-2 transition-colors cursor-pointer ${
+            className={`flex items-center gap-2 px-3 py-1 rounded-full border-2 transition-colors cursor-pointer mb-1 md:mb-0 ${
                 isActive ? "bg-orange-app text-white border-orange-app" : "bg-white text-black border-gray-300"
             }`}
         >

@@ -3,6 +3,7 @@ import CloseButton from "./CloseButton";
 import ProjectCard from "./ProjectCard";
 import TechBadgeFilter from "./TechBadgeFilter.jsx";
 import techIcons from "./data/techIconsData";
+import ResetFiltersButton from "./ResetFiltersButton.jsx";
 
 const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     const [selectedTech, setSelectedTech] = useState([]);
@@ -33,7 +34,7 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     });
 
     return (
-        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 transition-opacity duration-300">
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 transition-opacity duration-300 mx-2">
             <div
                 className={`bg-gradient border-14 p-4 shadow-xl rounded-4xl max-w-7xl w-full overflow-hidden h-[80vh] relative transform transition-all duration-500 ${
                     isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"
@@ -43,8 +44,8 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
                 <h3 className="text-2xl font-bold mb-4">Todos los proyectos</h3>
 
                 {/* Contenedor de filtros y botón para desmarcar */}
-                <div className="flex justify-between items-center mb-4">
-                    <div className="flex flex-wrap gap-2">
+                <div className="flex justify-between items-start mb-4 space-x-3">
+                    <div className="flex md:flex-wrap gap-3 overflow-auto">
                         {Object.keys(techIcons).map((tech) => (
                             <TechBadgeFilter
                                 key={tech}
@@ -54,19 +55,7 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
                             />
                         ))}
                     </div>
-                    <button
-                        onClick={() => setSelectedTech([])}
-                        className="relative inline-block bg-orange-app text-white p-3 cursor-pointer rounded group"
-                    >
-                        <div className="flex items-center justify-center w-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                 className="bi bi-eraser" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z"/>
-                            </svg>
-                        </div>
-                        <span className="absolute inset-0 bg-black/20 left-0 w-0 group-hover:w-full transition-all duration-500"></span>
-                    </button>
+                    <ResetFiltersButton onClick={() => setSelectedTech([])}/>
                 </div>
 
                 <div className="overflow-y-auto max-h-[50vh] md:max-h-[60vh] p-4">

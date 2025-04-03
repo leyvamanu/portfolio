@@ -52,12 +52,8 @@ html {
     font-family: 'Outlast Slab', serif;
 }
 
-.swiper-button-prev, .swiper-button-next {
-    color: #f97316 !important;
-}
-
-.swiper-button-prev:hover, .swiper-button-next:hover {
-    color: #e14e22 !important;
+.swiper {
+    padding-bottom: 50px;
 }
 
 .swiper-pagination-bullet {

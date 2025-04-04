@@ -3,13 +3,13 @@ const Slide = ({review}) => {
     const getAvatar = (name) => {
         if (name) {
             const initials = name.split(' ').map(word => word[0]).join('');
-            return `https://ui-avatars.com/api/?name=${initials}`;
+            return `https://ui-avatars.com/api/?name=${initials}&background=e14e22&color=fff`;
         }
         return '';
     };
 
     return (
-        <div className="bg-gradient border-4 shadow-xl rounded-xl cursor-pointer transition-transform p-4">
+        <div className="bg border-4 shadow-xl rounded-xl cursor-pointer transition-transform p-4">
             <div className="flex items-center mb-4">
                 <img
                     src={review.avatar || getAvatar(review.name)}

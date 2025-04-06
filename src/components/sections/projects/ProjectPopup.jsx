@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CloseButton from "./CloseButton";
+import CloseButton from "../../utils/CloseButton.jsx";
 import TechBadge from "./TechBadge.jsx";
 
 const ProjectPopup = ({ project, onClose }) => {

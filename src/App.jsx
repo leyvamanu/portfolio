@@ -2,7 +2,7 @@ import './App.css'
 import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import CVSection from "./components/sections/cv/CVSection.jsx";
-import BackToTopButton from "./components/BackToTopButton.jsx";
+import BackToTopButton from "./components/utils/BackToTopButton.jsx";
 import ProjectsSection from "./components/sections/projects/ProjectsSection.jsx";
 import AboutMeSection from "./components/sections/about/AboutMeSection.jsx";
 import ContactSection from "./components/sections/contact/ContactSection.jsx";

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CloseButton from "./CloseButton";
+import CloseButton from "../../utils/CloseButton.jsx";
 import ProjectCard from "./ProjectCard";
 import TechBadgeFilter from "./TechBadgeFilter.jsx";
 import techIcons from "./data/techIconsData";
@@ -58,7 +58,7 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
                     <ResetFiltersButton onClick={() => setSelectedTech([])}/>
                 </div>
 
-                <div className="overflow-y-auto max-h-[50vh] md:max-h-[60vh] p-4">
+                <div className="overflow-y-auto max-h-[57vh] md:max-h-[60vh] p-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {filteredProjects.length > 0 ? (
                             filteredProjects.map((project) => (

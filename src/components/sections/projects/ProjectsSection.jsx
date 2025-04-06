@@ -25,14 +25,12 @@ const ProjectsSection = () => {
                 <ViewAllButton onClick={() => setShowAllProjects(true)} />
             </div>
 
-            {/* Mostrar solo 3 proyectos */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.slice(0, 3).map((project) => (
                     <ProjectCard key={project.id} project={project} onClick={setSelectedProject} />
                 ))}
             </div>
 
-            {/* Pop-ups */}
             {selectedProject && <ProjectPopup project={selectedProject} onClose={() => setSelectedProject(null)} />}
             {showAllProjects && (
                 <AllProjectsPopup projects={projects} onSelectProject={setSelectedProject} onClose={() => setShowAllProjects(false)} />

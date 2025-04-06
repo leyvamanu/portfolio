@@ -43,7 +43,6 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
                 <CloseButton onClick={onClose} />
                 <h3 className="text-2xl font-bold mb-4">Todos los proyectos</h3>
 
-                {/* Contenedor de filtros y botón para desmarcar */}
                 <div className="flex justify-between items-start mb-4 space-x-3">
                     <div className="flex md:flex-wrap gap-3 overflow-auto">
                         {Object.keys(techIcons).map((tech) => (

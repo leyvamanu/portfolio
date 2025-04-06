@@ -19,7 +19,6 @@ const AboutMeSection = () => {
                 dado bien autodescribirme. Prefiero que lo hagan los demás.
             </p>
 
-            {/*<h3 className="text-2xl font-bold text-left mb-2">Lo que dicen de mí</h3>*/}
             <Swiper
                 spaceBetween={30}
                 slidesPerView={3}

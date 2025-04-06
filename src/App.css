@@ -14,4 +14,5 @@
 @theme {
     --color-orange-app: #fc582a;
     --color-orange-app-hover: #e14e22;
+    --color-orange-app-focus: #e14e22;
 }

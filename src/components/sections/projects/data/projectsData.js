@@ -17,7 +17,7 @@ const projects = [
         image: "/projects/loiscounsel.png",
         shortDesc: "Web corporativa de LOIS Counsel SL.",
         fullDesc: "Durante mi etapa profesional en LOIS Counsel SL, uno de mis proyectos fue el desarrollo y mantenimiento de la web corporativa de la empresa, asegurando su correcto funcionamiento y actualización.",
-        technologies: ["WordPress", "JavaScript", "HTML", "CSS"],
+        technologies: ["WordPress", "MySQL", "JavaScript", "HTML", "CSS"],
         type: "Profesional",
         github: "",
         url: "https://loiscounsel.com",
@@ -63,6 +63,29 @@ const projects = [
     },
     {
         id: 6,
+        title: "Campus LOIS",
+        image: "/projects/campus.png",
+        shortDesc: "Plataforma e-learning de LOIS",
+        fullDesc: "Plataforma con diferentes cursos online creados por los socios de LOIS Counsel S.L.\n" +
+            "Esta plataforma no la desarrollé por completo, ya que cuando me incorporé a la empresa ya estaba creada por el desarrollador anterior. Sin embargo, me encargué de renovarla, actualizándola para que soportara PHP 8.0 tras la migración del servidor. También cambié la pasarela de pago online, integrando Stripe, y añadí un par de cursos que no existían en la plataforma..",
+        technologies: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML", "CSS", "Stripe"],
+        type: "Profesional",
+        github: "",
+        url: "https://workshops.loiscounsel.com/",
+    },
+    {
+        id: 6,
+        title: "Avedillo",
+        image: "/projects/avedillo.png",
+        shortDesc: "Web corporativa de Avedillo",
+        fullDesc: "Web corporativa para el despacho Avedillo Abogados Asociados.\n" +
+            "Si bien no era una práctica habitual crear páginas web corporativas para los clientes, en este caso se hizo una excepción por tratarse de un conocido de la consultora LOIS Counsel S.L. Para esta ocasión, desarrollamos la web corporativa del cliente.",
+        technologies: ["WordPress", "MySQL", "JavaScript", "HTML", "CSS"],
+        github: "",
+        url: "https://avedillo.legal/",
+    },
+    {
+        id: 8,
         title: "MOT Estudio de palabras",
         image: "/projects/mot.png",
         shortDesc: "Web de presentación y contacto para una Copywriter",

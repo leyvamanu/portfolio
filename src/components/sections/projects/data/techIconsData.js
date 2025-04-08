@@ -1,6 +1,7 @@
 const techIcons = {
     PHP: "tech-logos/php.svg",
     Symfony: "tech-logos/symfony.svg",
+    Laravel: "tech-logos/laravel.svg",
     JavaScript: "tech-logos/javascript.svg",
     MySQL: "tech-logos/mysql.svg",
     Tailwind: "tech-logos/tailwindcss.svg",

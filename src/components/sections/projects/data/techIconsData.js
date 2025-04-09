@@ -5,6 +5,7 @@ const techIcons = {
     JavaScript: "tech-logos/javascript.svg",
     MySQL: "tech-logos/mysql.svg",
     Tailwind: "tech-logos/tailwindcss.svg",
+    jQuery: "tech-logos/jquery.svg",
     WordPress: "tech-logos/wordpress.svg",
     HTML: "tech-logos/html5.svg",
     CSS: "tech-logos/css3.svg",

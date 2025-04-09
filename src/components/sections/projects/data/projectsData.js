@@ -6,7 +6,7 @@ const projects = [
         shortDesc: "Test de competencias digitales",
         fullDesc: "Esta aplicación consiste en un test dirigido al personal de un despacho de abogados o una asesoría de empresas. Proporciona una serie de gráficos que reflejan el perfil digital de los abogados, segmentado según las características del despacho. Además, genera automáticamente un PDF con los resultados.  \n" +
             "Cuenta con dos versiones: una gestionada completamente por nosotros y otra de pago online, administrada por el cliente a través de un panel de control.\n",
-        technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind", "Stripe"],
+        technologies: ["PHP", "Symfony", "MySQL", "JavaScript", "HTML", "CSS", "Tailwind", "jQuery", "Stripe"],
         type: "Profesional",
         github: "",
         url: "https://compelex.com",

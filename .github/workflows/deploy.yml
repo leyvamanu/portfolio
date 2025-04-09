@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: "./dist/"
-          server-dir: "/www/portfolio/front"  # Asegúrate de que termina en "/"
+          server-dir: "/www/"  # Asegúrate de que termina en "/"

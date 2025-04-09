@@ -15,8 +15,8 @@ const AboutMeSection = () => {
         <section id="about-me" className="py-16 px-6 max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-left">Sobre Mí</h2>
             <p className="text-lg mb-4">
-                En esta sección podría haber escrito un párrafo interminable sobre mis cualidades, pero nunca se me ha
-                dado bien autodescribirme. Prefiero que lo hagan los demás.
+                Creo que dice más de mí lo que opina la gente con la que he tenido oportunidad de trabajar que lo que
+                pueda contaros yo mismo, así que ahí va:
             </p>
 
             <Swiper

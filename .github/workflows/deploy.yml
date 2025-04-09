@@ -3,7 +3,7 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-      - master  # Se activará al hacer push en la rama main
+      - main  # Cambia a 'master' si es tu rama principal
 
 jobs:
   deploy:
@@ -12,11 +12,19 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Check build folder
+        run: ls -la ./dist/
+
       - name: Deploy to FTP Server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: manuleyva-com.espacioseguro.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: "./dist/"  # Ajusta la carpeta si es necesario
-          server-dir: "/www/portfolio/front"  # Cambia según tu hosting
+          local-dir: "./dist/"
+          server-dir: "/www/portfolio/front/"  # Asegúrate de que termina en "/"

@@ -1,0 +1,22 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - master  # Se activará al hacer push en la rama main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Deploy to FTP Server
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: manuleyva-com.espacioseguro.com
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: "./dist"  # Ajusta la carpeta si es necesario
+          server-dir: "/www/portfolio/front"  # Cambia según tu hosting

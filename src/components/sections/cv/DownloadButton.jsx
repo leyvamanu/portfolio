@@ -1,7 +1,7 @@
 const DownloadButton  = () => {
     return (
         <a
-            href="../../../../public/CV Manuel Leyva.pdf"
+            href="CV Manuel Leyva.pdf"
             download
             className="mt-3 md:text-lg relative inline-block bg-orange-app  text-white px-3 md:px-6 py-3 rounded overflow-hidden transition-colors duration-300 group"
         >

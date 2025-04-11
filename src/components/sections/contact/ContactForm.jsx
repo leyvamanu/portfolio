@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PrivacyPolicyModal from "./PrivacyPolicyModal.jsx";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false });
@@ -22,11 +23,11 @@ const ContactForm = () => {
             const token = await window.grecaptcha.execute("6LdYuRQrAAAAAGC1GP_nIsicOVrzoF4Vw6yOm5Qy", { action: "submit" });
 
             // Enviar los datos junto con el token de ReCaptcha
-            const response = await fetch("https://portfolio.manuleyva.com/api/contact", {
+            const response = await fetch(`${API_URL}/contact`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    // "Accept": "application/json"
+                    "Accept": "application/json"
                 },
                 body: JSON.stringify({
                     name: formData.name,

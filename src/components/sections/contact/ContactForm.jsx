@@ -32,7 +32,7 @@ const ContactForm = () => {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
-                    recaptchaToken: token
+                    recaptcha_token: token
                 }),
             });
 

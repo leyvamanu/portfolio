@@ -64,3 +64,7 @@ html {
 .swiper-pagination-bullet-active {
     background-color: #e14e22 !important;
 }
+
+.grecaptcha-badge {
+    visibility: hidden;
+}

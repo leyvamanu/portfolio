@@ -18,10 +18,22 @@ const ContactForm = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("https://tu-backend.com/api/contact", {
+            // Obtener el token de Google ReCaptcha v3
+            const token = await window.grecaptcha.execute("6LdYuRQrAAAAAGC1GP_nIsicOVrzoF4Vw6yOm5Qy", { action: "submit" });
+
+            // Enviar los datos junto con el token de ReCaptcha
+            const response = await fetch("http://127.0.0.1:8000/api/contact", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name: formData.name, email: formData.email, message: formData.message }),
+                headers: {
+                    "Content-Type": "application/json",
+                    // "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                    recaptchaToken: token
+                }),
             });
 
             if (response.ok) {

@@ -23,6 +23,12 @@ const reviews = [
         "text": "Cada vez que hemos acudido a Manu para que nos ayude a encontrar soluciones, su respuesta y solución han sido rápidas y, lo más importante, adecuadas a nuestras necesidades. Siempre ha sabido ajustarse a lo que necesitamos con plena disponibilidad, como si fuera uno más de nuestra organización.",
         "avatar": "avatars/agnes-millet.jpg"
     },
+    {
+        "name": "Lidia Palmer",
+        "role": "Copywriter (mot - estudio de palabra)",
+        "text": "Manu es un gran profesional y una persona con la que el proyecto fluye con total facilidad. Trabajé con él la web de mi estudio y gracias a su atención al detalle y su experiencia, el resultado fue exactamente el que buscaba. Sin duda repetiría con él.",
+        "avatar": "avatars/lidia-palmer.jpg"
+    },
 ];
 
 export default reviews;

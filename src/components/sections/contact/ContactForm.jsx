@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PrivacyPolicyModal from "./PrivacyPolicyModal.jsx";
 const API_URL = import.meta.env.VITE_API_URL;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false });
@@ -20,14 +21,14 @@ const ContactForm = () => {
 
         try {
             // Obtener el token de Google ReCaptcha v3
-            const token = await window.grecaptcha.execute("6LdYuRQrAAAAAGC1GP_nIsicOVrzoF4Vw6yOm5Qy", { action: "submit" });
+            const token = await window.grecaptcha.execute(`${RECAPTCHA_SITE_KEY}`, { action: "submit" });
 
             // Enviar los datos junto con el token de ReCaptcha
             const response = await fetch(`${API_URL}/contact`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    // "Accept": "application/json"
+                    "Accept": "application/json"
                 },
                 body: JSON.stringify({
                     name: formData.name,

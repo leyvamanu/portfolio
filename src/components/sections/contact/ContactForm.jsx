@@ -21,7 +21,8 @@ const ContactForm = () => {
 
         try {
             // Obtener el token de Google ReCaptcha v3
-            const token = await window.grecaptcha.execute(`${RECAPTCHA_SITE_KEY}`, { action: "submit" });
+            const token = await window.grecaptcha.execute("6LdYuRQrAAAAAGC1GP_nIsicOVrzoF4Vw6yOm5Qy", { action: "submit" });
+            // const token = await window.grecaptcha.execute(`${RECAPTCHA_SITE_KEY}`, { action: "submit" });
 
             // Enviar los datos junto con el token de ReCaptcha
             const response = await fetch(`${API_URL}/contact`, {

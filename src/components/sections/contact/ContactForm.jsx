@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PrivacyPolicyModal from "./PrivacyPolicyModal.jsx";
 const API_URL = import.meta.env.VITE_API_URL;
 const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
@@ -8,6 +8,17 @@ const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [success, setSuccess] = useState(null);
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;

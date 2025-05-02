@@ -21,7 +21,7 @@ const Slide = ({review}) => {
                     <p className="text-sm text-orange-app">{review.role}</p>
                 </div>
             </div>
-            <p className="h-48 overflow-y-auto">{review.text}</p>
+            <p className="h-48 overflow-y-auto">{review.content}</p>
         </div>
     );
 };

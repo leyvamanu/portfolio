@@ -74,7 +74,7 @@ const projects = [
         url: "https://workshops.loiscounsel.com/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Avedillo",
         image: "/projects/avedillo.png",
         shortDesc: "Web corporativa de Avedillo",

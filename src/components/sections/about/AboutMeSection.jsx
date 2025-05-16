@@ -33,14 +33,21 @@ const AboutMeSection = () => {
 
         fetchReviews(); // Llamar a la función para obtener las reseñas
     }, [API_URL]);
-    //
-    // // Manejar estados de carga y error
-    // if (isLoading) {
-    //     return <p>Cargando reseñas...</p>; // Mostrar mensaje de carga
-    // }
-    // if (error) {
-    //     return <p>Error: {error}</p>; // Mostrar mensaje de error
-    // }
+
+    if (isLoading) {
+        return (
+            <section id="about-me" className="py-16 px-6 max-w-7xl mx-auto">
+                <div className="loader"></div>
+            </section>
+        );
+    }
+    if (error) {
+        return (
+            <section id="about-me" className="py-16 px-6 max-w-7xl mx-auto">
+                <p className="error-message">❌ Ocurrió un error: {error}</p>
+            </section>
+        );
+    }
 
     return (
         <section id="about-me" className="py-16 px-6 max-w-7xl mx-auto">
@@ -49,7 +56,6 @@ const AboutMeSection = () => {
                 Creo que dice más de mí lo que opina la gente con la que he tenido oportunidad de trabajar que lo que
                 pueda contaros yo mismo, así que ahí va:
             </p>
-
             <Swiper
                 spaceBetween={30}
                 slidesPerView={3}

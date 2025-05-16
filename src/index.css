@@ -68,3 +68,19 @@ html {
 .grecaptcha-badge {
     visibility: hidden;
 }
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid white;
+    border-right-color: #fc582a;
+    animation: l2 1s infinite linear;
+}
+
+@keyframes l2 {
+    to {
+        transform: rotate(1turn)
+    }
+}

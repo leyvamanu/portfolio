@@ -3,6 +3,7 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import CVSection from "./components/sections/cv/CVSection.jsx";
 import BackToTopButton from "./components/utils/BackToTopButton.jsx";
+import ExperienceSection from "./components/sections/experience/ExperienceSection.jsx";
 import ProjectsSection from "./components/sections/projects/ProjectsSection.jsx";
 import AboutMeSection from "./components/sections/about/AboutMeSection.jsx";
 import ContactSection from "./components/sections/contact/ContactSection.jsx";
@@ -12,6 +13,7 @@ const App = () => {
         <div className="flex-col min-h-screen items-center justify-center bg-gradient-menu text-white">
             <NavBar />
             <CVSection />
+            <ExperienceSection />
             <ProjectsSection />
             <AboutMeSection />
             <ContactSection />

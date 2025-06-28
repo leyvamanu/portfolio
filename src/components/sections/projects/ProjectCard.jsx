@@ -1,5 +1,5 @@
 import "react";
-import TechBadge from "./TechBadge.jsx";
+import TechBadge from "../../utils/TechBadge.jsx";
 
 const ProjectCard = ({ project, onClick }) => {
     return (
@@ -10,10 +10,10 @@ const ProjectCard = ({ project, onClick }) => {
             <img src={project.image} alt={project.title} className="w-full h-60 object-cover rounded-t-lg" />
             <div className="p-4">
                 <h3 className="text-xl font-bold">{project.title}</h3>
-                <p>{project.shortDesc}</p>
+                <p>{project.short_desc}</p>
                 <div className="mt-2 flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                        <TechBadge key={tech} tech={tech} />
+                    {project.skills.map((tech) => (
+                        <TechBadge key={tech.id} tech={tech} />
                     ))}
                 </div>
             </div>

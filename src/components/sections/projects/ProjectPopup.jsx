@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CloseButton from "../../utils/CloseButton.jsx";
-import TechBadge from "./TechBadge.jsx";
+import TechBadge from "../../utils/TechBadge.jsx";
 
 const ProjectPopup = ({ project, onClose }) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +26,7 @@ const ProjectPopup = ({ project, onClose }) => {
                     <CloseButton onClick={onClose} />
                     <img src={project.image} alt={project.title} className="w-full h-60 object-cover rounded" />
                     <div className="p-2">
-                        <p className="mt-2 max-h-32 overflow-y-auto" dangerouslySetInnerHTML={{ __html: project.fullDesc.replace(/\n/g, "<br />") }} />
+                        <p className="mt-2 max-h-32 overflow-y-auto" dangerouslySetInnerHTML={{ __html: project.full_desc.replace(/\n/g, "<br />") }} />
                         <p className="mt-4 font-semibold">Tipo: <span>{project.type}</span></p>
 
                         {project.url && (
@@ -42,8 +42,8 @@ const ProjectPopup = ({ project, onClose }) => {
                         )}
 
                         <div className="mt-4 flex md:flex-wrap overflow-auto gap-2">
-                            {project.technologies.map((tech) => (
-                                <TechBadge key={tech} tech={tech} />
+                            {project.skills.map((skill) => (
+                                <TechBadge key={skill.id} tech={skill} />
                             ))}
                         </div>
                     </div>

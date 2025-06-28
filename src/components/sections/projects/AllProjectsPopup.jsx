@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import CloseButton from "../../utils/CloseButton.jsx";
 import ProjectCard from "./ProjectCard";
 import TechBadgeFilter from "./TechBadgeFilter.jsx";
-import techIcons from "./data/techIconsData";
 import ResetFiltersButton from "./ResetFiltersButton.jsx";
 
-const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
+const AllProjectsPopup = ({ skills, projects, onSelectProject, onClose }) => {
     const [selectedTech, setSelectedTech] = useState([]);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -26,11 +25,10 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
     };
 
     const filteredProjects = projects.filter((project) => {
-        const matchesTech =
-            selectedTech.length === 0 ||
-            selectedTech.every((tech) => project.technologies.includes(tech));
-
-        return matchesTech;
+        return selectedTech.length === 0 ||
+            selectedTech.every((tech) =>
+                project.skills.some((skill) => skill.id === tech.id)
+            );
     });
 
     return (
@@ -45,12 +43,12 @@ const AllProjectsPopup = ({ projects, onSelectProject, onClose }) => {
 
                 <div className="flex justify-between items-start mb-4 space-x-3">
                     <div className="flex md:flex-wrap gap-3 overflow-auto">
-                        {Object.keys(techIcons).map((tech) => (
+                        {skills.map((skill) => (
                             <TechBadgeFilter
-                                key={tech}
-                                tech={tech}
-                                onClick={() => toggleTechFilter(tech)}
-                                isActive={selectedTech.includes(tech)}
+                                key={skill.id}
+                                tech={skill}
+                                onClick={() => toggleTechFilter(skill)}
+                                isActive={selectedTech.includes(skill)}
                             />
                         ))}
                     </div>

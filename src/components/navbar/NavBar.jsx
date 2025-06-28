@@ -36,6 +36,7 @@ const Navbar = () => {
                 <Logo />
                 <div className="hidden md:flex space-x-8">
                     <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
+                    <MenuLink href="#experience" active={activeSection === 'experience'}>Experiencia</MenuLink>
                     <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
                     <MenuLink href="#about-me" active={activeSection === 'about-me'}>Sobre Mi</MenuLink>
                     <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
@@ -52,18 +53,11 @@ const Navbar = () => {
             >
                 <div className="p-4">
                     <ul className="flex flex-col space-y-4">
-                        <li>
-                            <MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink>
-                        </li>
-                        <li>
-                            <MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink>
-                        </li>
-                        <li>
-                            <MenuLink href="#about-me" active={activeSection === 'about-me'}>Sobre Mi</MenuLink>
-                        </li>
-                        <li>
-                            <MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink>
-                        </li>
+                        <li><MenuLink href="#cv" active={activeSection === 'cv'}>CV</MenuLink></li>
+                        <li><MenuLink href="#experience" active={activeSection === 'experience'}>Experiencia</MenuLink></li>
+                        <li><MenuLink href="#projects" active={activeSection === 'projects'}>Proyectos</MenuLink></li>
+                        <li><MenuLink href="#about-me" active={activeSection === 'about-me'}>Sobre Mi</MenuLink></li>
+                        <li><MenuLink href="#contact" active={activeSection === 'contact'}>Contacto</MenuLink></li>
                     </ul>
                 </div>
             </div>

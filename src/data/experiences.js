@@ -1,0 +1,47 @@
+const BASE_PATH = "./storage";
+
+export const experiences = [
+    {
+        id: 1,
+        company: "LOIS Counsel SL",
+        logo: `${BASE_PATH}/logos/logo-lois.svg`,
+        position: "Desarrollador web",
+        description: "Desarrollador Web en consultora especializada en digitalización de despachos de abogados y asesorías de empresas medianas y grandes.\n\nMi función principal fue el desarrollo de herramientas web internas para la consultora, destinadas a evaluar el nivel de digitalización de los equipos de los despachos con los que trabajaban.\n\nPara ello, utilicé PHP como lenguaje principal, trabajando mayoritariamente con Symfony y, en ocasiones, con Laravel para proyectos existentes. Además, empleé tecnologías como HTML, CSS, JavaScript, jQuery y Tailwind CSS.\n\nEntre los retos que afronté, destacan:\n\nDesarrollo de back offices para la administración de herramientas con EasyAdmin.\nGeneración dinámica de PDFs con DomPDF.\nImplementación de una pasarela de pago con Stripe.\nAutomatización de envíos masivos de emails.\nDesarrollo de la página web corporativa con WordPress.\n\nComo único desarrollador en la empresa, fui responsable de todas las fases de los proyectos, desde el desarrollo hasta la puesta en producción. Además, participé en tareas de automatización de procesos mediante RPA UiPath.",
+        start_date: "2021-06-15",
+        end_date: "2024-12-13",
+        skills: [
+            { id: 9, name: "CSS", icon: `${BASE_PATH}/icons/css3.svg` },
+            { id: 8, name: "HTML", icon: `${BASE_PATH}/icons/html5.svg` },
+            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
+            { id: 7, name: "jQuery", icon: `${BASE_PATH}/icons/jquery.svg` },
+            { id: 3, name: "Laravel", icon: `${BASE_PATH}/icons/laravel.svg` },
+            { id: 5, name: "MySQL", icon: `${BASE_PATH}/icons/mysql.svg` },
+            { id: 1, name: "PHP", icon: `${BASE_PATH}/icons/php.svg` },
+            { id: 10, name: "Stripe", icon: `${BASE_PATH}/icons/stripe.svg` },
+            { id: 2, name: "Symfony", icon: `${BASE_PATH}/icons/symfony.svg` },
+            { id: 6, name: "Tailwind", icon: `${BASE_PATH}/icons/tailwindcss.svg` },
+            { id: 13, name: "UiPath", icon: `${BASE_PATH}/icons/uipath.svg` },
+            { id: 12, name: "WordPress", icon: `${BASE_PATH}/icons/wordpress.svg` },
+        ],
+    },
+    {
+        id: 2,
+        company: "Freelance",
+        logo: null,
+        position: "Programador/a web",
+        description: "Más que una experiencia laboral convencional, fue una continuación de mis prácticas. Tras finalizar el ciclo de Desarrollo de Aplicaciones Web (DAW), realicé mis prácticas con un autónomo, quien al terminar me ofreció continuar con él a media jornada.\nDurante este período, colaboré en diversos proyectos, trabajando con el stack básico de desarrollo web (HTML, CSS y JavaScript). Además, adquirí experiencia en desarrollo backend con PHP, utilizando frameworks como CakePHP y Symfony, así como en la personalización y mantenimiento de CMS como PrestaShop.",
+        start_date: "2019-09-16",
+        end_date: "2021-06-11",
+        skills: [
+            { id: 1, name: "PHP", icon: `${BASE_PATH}/icons/php.svg` },
+            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
+            { id: 5, name: "MySQL", icon: `${BASE_PATH}/icons/mysql.svg` },
+            { id: 7, name: "jQuery", icon: `${BASE_PATH}/icons/jquery.svg` },
+            { id: 8, name: "HTML", icon: `${BASE_PATH}/icons/html5.svg` },
+            { id: 9, name: "CSS", icon: `${BASE_PATH}/icons/css3.svg` },
+            { id: 11, name: "UIkit", icon: `${BASE_PATH}/icons/uikit.svg` },
+            { id: 14, name: "Prestashop", icon: `${BASE_PATH}/icons/prestashop.svg` },
+            { id: 15, name: "CakePHP", icon: `${BASE_PATH}/icons/cakephp.svg` },
+        ],
+    },
+];

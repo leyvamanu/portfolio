@@ -1,4 +1,4 @@
-const BASE_PATH = "./storage";
+const BASE_PATH = "/storage";
 
 export const skills = [
     { id: 9, name: "CSS", avatar: `${BASE_PATH}/icons/css3.svg` },

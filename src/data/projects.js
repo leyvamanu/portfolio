@@ -1,4 +1,4 @@
-const BASE_PATH = "./storage";
+const BASE_PATH = "/storage";
 
 export const featuredProjects = [
     {

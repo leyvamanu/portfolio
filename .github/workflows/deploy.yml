@@ -5,16 +5,24 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set environment variables
         run: |
-          echo "VITE_API_URL=https://portfolio.manuleyva.com/api" >> .env.production
           echo "VITE_RECAPTCHA_SITE_KEY=${{ secrets.RECAPTCHA_SITE_KEY }}" >> .env.production
 
       - name: Install dependencies and build
@@ -22,14 +30,18 @@ jobs:
           npm install
           npm run build
 
-      - name: Check build folder
-        run: ls -la ./dist/
-
-      - name: Deploy to FTP Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          server: manuleyva-com.espacioseguro.com
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: "./dist/"
-          server-dir: "/www/portfolio/front/"  # Asegúrate de que termina en "/"
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

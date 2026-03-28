@@ -36,21 +36,6 @@ const Footer = () => {
                         <p className="max-w-xs text-sm text-center md:text-right mb-3">
                             © {currentYear} - Manu Leyva | Desarrollador WEB
                         </p>
-                        <p className="max-w-xs text-xs text-center md:text-right">
-                            <span>Este sitio está protegido por reCAPTCHA y se aplican la </span>
-                            <a href="https://policies.google.com/privacy" target="_blank"
-                               className="relative inline-block transition-colors duration-300 group text-white hover:text-orange-app">
-                                <span>Política de Privacidad</span>
-                                <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white transition-all duration-300"></span>
-                                <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-orange-app group-hover:w-full transition-all duration-300"></span>
-                            </a>  y los
-                            <a href="https://policies.google.com/terms" target="_blank"
-                               className="relative inline-block transition-colors duration-300 group text-white hover:text-orange-app">
-                                <span>Términos de Servicio</span>
-                                <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white transition-all duration-300"></span>
-                                <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-orange-app group-hover:w-full transition-all duration-300"></span>
-                            </a> de Google.
-                        </p>
                     </div>
                 </div>
             </div>

@@ -4,8 +4,8 @@ import TextareaInput from "./TextareaInput.jsx";
 import PrivacyCheckbox from "./PrivacyCheckbox.jsx";
 import SubmitButton from "./SubmitButton.jsx";
 import PrivacyPolicyModal from "./PrivacyPolicyModal.jsx";
-const API_URL = import.meta.env.VITE_API_URL;
-const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+
+const WEB3FORMS_ACCESS_KEY = "9e4b2259-ccf4-43c9-a754-92e07efc7383";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false });
@@ -13,17 +13,6 @@ const ContactForm = () => {
     const [success, setSuccess] = useState(null);
     const [errors, setErrors] = useState({});
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
-
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     useEffect(() => {
         if (success !== null) {
@@ -51,33 +40,41 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setErrors({});
+
+        // Validación local
+        const newErrors = {};
+        if (!formData.name.trim()) newErrors.name = ["El nombre es obligatorio"];
+        if (!formData.email.trim()) newErrors.email = ["El email es obligatorio"];
+        if (!formData.message.trim()) newErrors.message = ["El mensaje es obligatorio"];
+        if (!formData.privacy) newErrors.privacy = ["Debes aceptar la política de privacidad"];
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            setIsSubmitting(false);
+            return;
+        }
 
         try {
-            // Obtener el token de Google ReCaptcha v3
-            const token = await window.grecaptcha.execute(`${RECAPTCHA_SITE_KEY}`, { action: "submit" });
+            const form = new FormData();
+            form.append("access_key", WEB3FORMS_ACCESS_KEY);
+            form.append("name", formData.name);
+            form.append("email", formData.email);
+            form.append("message", formData.message);
+            form.append("botcheck", "");
 
-            // Enviar los datos junto con el token de ReCaptcha
-            const response = await fetch(`${API_URL}/contact`, {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                    privacy: formData.privacy,
-                    recaptcha_token: token,
-                }),
+                body: form,
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (data.success) {
                 setSuccess(true);
                 setFormData({ name: "", email: "", message: "", privacy: false });
             } else {
-                const data = await response.json();
-                setErrors(data.errors || {});
+                setSuccess(false);
             }
         } catch (error) {
             setSuccess(false);
@@ -89,6 +86,7 @@ const ContactForm = () => {
     return (
         <>
             <form onSubmit={handleSubmit} className="mt-6">
+                <input type="hidden" name="botcheck" style={{ display: "none" }} />
                 <TextInput
                     id="name"
                     label="Nombre:"

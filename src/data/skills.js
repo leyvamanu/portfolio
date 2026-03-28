@@ -16,4 +16,13 @@ export const skills = [
     { id: 13, name: "UiPath", avatar: `${BASE_PATH}/icons/uipath.svg` },
     { id: 12, name: "WordPress", avatar: `${BASE_PATH}/icons/wordpress.svg` },
     { id: 7, name: "jQuery", avatar: `${BASE_PATH}/icons/jquery.svg` },
+    { id: 16, name: "Docker", avatar: `${BASE_PATH}/icons/docker.svg` },
+    { id: 17, name: "Python", avatar: `${BASE_PATH}/icons/python.svg` },
+    { id: 18, name: "Java", avatar: `${BASE_PATH}/icons/java.svg` },
+    { id: 19, name: "Android", avatar: `${BASE_PATH}/icons/android.svg` },
+    { id: 20, name: "Bootstrap", avatar: `${BASE_PATH}/icons/bootstrap.svg` },
+    { id: 21, name: "Redis", avatar: `${BASE_PATH}/icons/redis.svg` },
+    { id: 22, name: "Azure", avatar: `${BASE_PATH}/icons/azure.svg` },
+    { id: 23, name: "Nginx", avatar: `${BASE_PATH}/icons/nginx.svg` },
+    { id: 24, name: "SQL Server", avatar: `${BASE_PATH}/icons/sqlserver.svg` },
 ];

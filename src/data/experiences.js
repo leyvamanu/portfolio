@@ -2,6 +2,30 @@ const BASE_PATH = "/storage";
 
 export const experiences = [
     {
+        id: 3,
+        company: "Optima",
+        logo: null,
+        position: "Desarrollador web",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        start_date: "2025-07-07",
+        end_date: null,
+        skills: [
+            { id: 1, name: "PHP", icon: `${BASE_PATH}/icons/php.svg` },
+            { id: 2, name: "Symfony", icon: `${BASE_PATH}/icons/symfony.svg` },
+            { id: 3, name: "Laravel", icon: `${BASE_PATH}/icons/laravel.svg` },
+            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
+            { id: 17, name: "Python", icon: `${BASE_PATH}/icons/python.svg` },
+            { id: 18, name: "Java", icon: `${BASE_PATH}/icons/java.svg` },
+            { id: 19, name: "Android", icon: `${BASE_PATH}/icons/android.svg` },
+            { id: 24, name: "SQL Server", icon: `${BASE_PATH}/icons/sqlserver.svg` },
+            { id: 20, name: "Bootstrap", icon: `${BASE_PATH}/icons/bootstrap.svg` },
+            { id: 16, name: "Docker", icon: `${BASE_PATH}/icons/docker.svg` },
+            { id: 23, name: "Nginx", icon: `${BASE_PATH}/icons/nginx.svg` },
+            { id: 21, name: "Redis", icon: `${BASE_PATH}/icons/redis.svg` },
+            { id: 22, name: "Azure", icon: `${BASE_PATH}/icons/azure.svg` },
+        ],
+    },
+    {
         id: 1,
         company: "LOIS Counsel SL",
         logo: `${BASE_PATH}/logos/logo-lois.svg`,

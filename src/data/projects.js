@@ -2,6 +2,31 @@ const BASE_PATH = "/storage";
 
 export const featuredProjects = [
     {
+        id: 9,
+        title: "Ignify",
+        image: `${BASE_PATH}/images/ignify.png`,
+        short_desc: "Plataforma empresarial de gestión integral",
+        full_desc: "Ecosistema completo de aplicaciones para la gestión empresarial desarrollado en Optima. Compuesto por una aplicación web (Symfony + JavaScript), una API REST (Laravel), una aplicación Android nativa (Java) y servicios de orquestación de datos en Python desplegados como Azure Functions.\n\nEl sistema integra múltiples fuentes de datos externas (SAP, Navision, Bunzl) y ofrece funcionalidades como gestión de tareas, fichajes, escaneo de códigos de barras, monitorización en tiempo real y generación de informes.\n\nLa infraestructura se gestiona con Docker, Nginx y Traefik, con Redis para caché y SQL Server como base de datos principal.",
+        type: "Professional",
+        github: null,
+        url: null,
+        skills: [
+            { id: 1, name: "PHP", icon: `${BASE_PATH}/icons/php.svg` },
+            { id: 2, name: "Symfony", icon: `${BASE_PATH}/icons/symfony.svg` },
+            { id: 3, name: "Laravel", icon: `${BASE_PATH}/icons/laravel.svg` },
+            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
+            { id: 17, name: "Python", icon: `${BASE_PATH}/icons/python.svg` },
+            { id: 18, name: "Java", icon: `${BASE_PATH}/icons/java.svg` },
+            { id: 19, name: "Android", icon: `${BASE_PATH}/icons/android.svg` },
+            { id: 24, name: "SQL Server", icon: `${BASE_PATH}/icons/sqlserver.svg` },
+            { id: 20, name: "Bootstrap", icon: `${BASE_PATH}/icons/bootstrap.svg` },
+            { id: 16, name: "Docker", icon: `${BASE_PATH}/icons/docker.svg` },
+            { id: 23, name: "Nginx", icon: `${BASE_PATH}/icons/nginx.svg` },
+            { id: 21, name: "Redis", icon: `${BASE_PATH}/icons/redis.svg` },
+            { id: 22, name: "Azure", icon: `${BASE_PATH}/icons/azure.svg` },
+        ],
+    },
+    {
         id: 1,
         title: "Compelex",
         image: `${BASE_PATH}/images/compelex.png`,
@@ -20,23 +45,6 @@ export const featuredProjects = [
             { id: 6, name: "Tailwind", icon: `${BASE_PATH}/icons/tailwindcss.svg` },
             { id: 7, name: "jQuery", icon: `${BASE_PATH}/icons/jquery.svg` },
             { id: 10, name: "Stripe", icon: `${BASE_PATH}/icons/stripe.svg` },
-        ],
-    },
-    {
-        id: 2,
-        title: "LOIS Counsel SL",
-        image: `${BASE_PATH}/images/loiscounsel.png`,
-        short_desc: "Web corporativa de LOIS Counsel SL.",
-        full_desc: "Durante mi etapa profesional en LOIS Counsel SL, uno de mis proyectos fue el desarrollo y mantenimiento de la web corporativa de la empresa, asegurando su correcto funcionamiento y actualización.",
-        type: "Professional",
-        github: null,
-        url: "https://loiscounsel.com",
-        skills: [
-            { id: 12, name: "WordPress", icon: `${BASE_PATH}/icons/wordpress.svg` },
-            { id: 5, name: "MySQL", icon: `${BASE_PATH}/icons/mysql.svg` },
-            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
-            { id: 8, name: "HTML", icon: `${BASE_PATH}/icons/html5.svg` },
-            { id: 9, name: "CSS", icon: `${BASE_PATH}/icons/css3.svg` },
         ],
     },
     {
@@ -62,6 +70,23 @@ export const featuredProjects = [
 
 export const allProjects = [
     ...featuredProjects,
+    {
+        id: 2,
+        title: "LOIS Counsel SL",
+        image: `${BASE_PATH}/images/loiscounsel.png`,
+        short_desc: "Web corporativa de LOIS Counsel SL.",
+        full_desc: "Durante mi etapa profesional en LOIS Counsel SL, uno de mis proyectos fue el desarrollo y mantenimiento de la web corporativa de la empresa, asegurando su correcto funcionamiento y actualización.",
+        type: "Professional",
+        github: null,
+        url: "https://loiscounsel.com",
+        skills: [
+            { id: 12, name: "WordPress", icon: `${BASE_PATH}/icons/wordpress.svg` },
+            { id: 5, name: "MySQL", icon: `${BASE_PATH}/icons/mysql.svg` },
+            { id: 4, name: "JavaScript", icon: `${BASE_PATH}/icons/javascript.svg` },
+            { id: 8, name: "HTML", icon: `${BASE_PATH}/icons/html5.svg` },
+            { id: 9, name: "CSS", icon: `${BASE_PATH}/icons/css3.svg` },
+        ],
+    },
     {
         id: 4,
         title: "Diagnóstico de Legal Operations",

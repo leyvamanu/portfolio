@@ -6,7 +6,7 @@ const TechBadge = ({tech}) => {
             <div className="w-6 h-6 flex items-center justify-center bg-white rounded-full">
                 <img src={tech.icon} alt={tech.name} className="w-4 h-4" />
             </div>
-            <span>{tech.name}</span>
+            <span className="whitespace-nowrap">{tech.name}</span>
         </div>
     );
 };
